@@ -23,6 +23,8 @@ gem 'activeadmin'
 
 gem 'sassc-rails'
 
+gem "image_processing", ">= 1.2"
+
 
 # Plus integrations with:
 gem 'devise'
