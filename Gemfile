@@ -21,6 +21,9 @@ gem "jbuilder"
 
 gem 'activeadmin'
 
+gem 'sassc-rails'
+
+
 # Plus integrations with:
 gem 'devise'
 gem 'cancancan'
