@@ -1,0 +1,17 @@
+<div class="customer">
+    <p><%= customer.full_name %></p>
+    <ul>
+        <li>
+            <strong>Phone Number:</strong> <%= customer.phone_number %>
+        </li> 
+        <li>
+            <strong>Email Address:</strong> <%= customer.email_address %>
+        </li> 
+        <li>
+            <strong>Notes:</strong> <%= customer.notes %>
+        </li> 
+        <% if customer.image.present? %>
+            <%= image_tag customer.image %>
+        <% end %>
+    </ul>
+</div>
