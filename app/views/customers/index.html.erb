@@ -1,8 +1,17 @@
-<h1>All Customers</h1>
+<h1 class="subtitle">All Customers</h1>
 
 <div>
-    <%= link_to 'Alphabetized Customers', alphabetized_customers_path %>
-    <%= link_to 'Missing Email Customers', missing_email_customers_path %>
+    <aside class="menu">
+        <p class="menu-label">General</p>
+        <ul class="menu-list">
+            <li>
+                <%= link_to 'Alphabetized Customers', alphabetized_customers_path %>
+            </li>
+            <li>
+                <%= link_to 'Missing Email Customers', missing_email_customers_path %>
+            </li>
+        </ul>
+    </aside>
 </div>
 
 <div>

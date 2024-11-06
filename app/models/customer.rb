@@ -1,6 +1,6 @@
 class Customer < ApplicationRecord
     validates :full_name, :phone_number, :email_address, presence: true
-    validates :email, format: { with: URI::MailTo::EMAIL_REGEXP } 
+    validates :email_address, format: { with: URI::MailTo::EMAIL_REGEXP } 
 
     has_one_attached :image
 

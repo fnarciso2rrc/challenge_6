@@ -1,17 +1,27 @@
 <div class="customer">
-    <p><%= customer.full_name %></p>
-    <ul>
-        <li>
-            <strong>Phone Number:</strong> <%= customer.phone_number %>
-        </li> 
-        <li>
-            <strong>Email Address:</strong> <%= customer.email_address %>
-        </li> 
-        <li>
-            <strong>Notes:</strong> <%= customer.notes %>
-        </li> 
-        <% if customer.image.present? %>
-            <%= image_tag customer.image %>
-        <% end %>
-    </ul>
+    <div class="card">
+        <div class="card-content">
+            <% if customer.image.present? %>
+                <div class="card image">
+                    <figure class="image">
+                        <%= image_tag customer.image %>
+                    </figure>
+                </div>
+            <% end %>
+            <p class="title">
+                <%= link_to customer.full_name, customer %>
+            </p>
+        </div>
+        <footer class="card-footer">
+            <p class="card-footer-item">
+                <strong>Phone Number: </strong> <%= customer.phone_number %>
+            </p>
+            <p class="card-footer-item">
+                <strong>Email Address: </strong> <%= customer.email_address %>
+            </p>
+            <p class="card-footer-item">
+                <strong>Notes: </strong> <%= customer.notes %>
+            </p>
+        </footer>
+    </div>
 </div>
