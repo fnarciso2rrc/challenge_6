@@ -19,7 +19,7 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
-gem "bulma-rails", "~> 1.0.0"
+gem "bulma-rails", "~> 1.0.3"
 
 gem 'activeadmin'
 
